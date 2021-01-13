@@ -4,6 +4,13 @@ Marc Duran
 
 ## Objectives
 # Auth Objectives
+- Use Laravel make:auth as default Bootstrap-based design theme, but remove ability to register
+
+```
+composer require laravel/ui
+php artisan ui bootstrap --auth
+```
+
 - Basic Laravel Auth: ability to log in as administrator
 - Use Laravel make:auth as default Bootstrap-based design theme, but remove ability to register
 - Use database seeds to create first user with email admin@admin.com and password “password”
@@ -25,4 +32,3 @@ Marc Duran
 - Use basic Laravel resource controllers with default methods – index, create, store etc.
 - Use Laravel’s validation function, using Request classes
 - Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page
-- Use Laravel make:auth as default Bootstrap-based design theme, but remove ability to register
