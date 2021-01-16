@@ -33,7 +33,18 @@ php artisan make:migration create_employees_table
 ...
 php artisan migrate
 ```
-- Use database seeds to create first user with email admin@admin.com and password “password”
+Model creation:
+```
+php artisan make:model Company
+php artisan make:model Employee
+```
+:heavy_check_mark: Use database seeds to create first user with email admin@admin.com and password “password”
+```
+php artisan make:seeder UserAdminSeeder
+...
+php artisan db:seed --class=UserAdminSeeder
+```
+
 # CRUD Objectives
 - CRUD functionality (Create / Read / Update / Delete) for two menu items: Companies and Employees.
 
