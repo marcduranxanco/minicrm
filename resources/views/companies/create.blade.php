@@ -1,10 +1,10 @@
-@extends('companies.layout')
+@extends('layouts.minicrm')
 
 @section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Add new company</h2>
+            <h2>Add new employee</h2>
         </div>
         <div class="pull-right">
             <a class="btn btn-primary" href="{{ route('companies.index') }}"> Back</a>
@@ -36,19 +36,19 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Email:</strong>
-                <input type="text" name="email" class="form-control" placeholder="email">
+                <input type="text" name="email" class="form-control" placeholder="Email">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Logo:</strong>
-                <input type="text" name="logo" class="form-control" placeholder="logo">
+                <input type="text" name="logo" class="form-control" placeholder="Logo">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Website:</strong>
-                <input type="text" name="website" class="form-control" placeholder="website">
+                <input type="text" name="website" class="form-control" placeholder="Website">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
