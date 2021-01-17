@@ -57,3 +57,6 @@ php artisan make:controller EmployeeController --resource --model=Employee
 - Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page
 
 - Store companies logos in storage/app/public folder and make them accessible from public
+```
+php artisan storage:link
+```
