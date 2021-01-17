@@ -46,9 +46,14 @@ php artisan db:seed --class=UserAdminSeeder
 ```
 
 # CRUD Objectives
-- CRUD functionality (Create / Read / Update / Delete) for two menu items: Companies and Employees.
+:heavy_check_mark: CRUD functionality (Create / Read / Update / Delete) for two menu items: Companies and Employees.
+:heavy_check_mark: Use basic Laravel resource controllers with default methods – index, create, store etc.
+```
+php artisan make:controller CompanyController --resource --model=Company
+php artisan make:controller EmployeeController --resource --model=Employee
+```
 
-- Store companies logos in storage/app/public folder and make them accessible from public
-- Use basic Laravel resource controllers with default methods – index, create, store etc.
 - Use Laravel’s validation function, using Request classes
 - Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page
+
+- Store companies logos in storage/app/public folder and make them accessible from public
