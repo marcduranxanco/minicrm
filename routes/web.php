@@ -18,10 +18,13 @@ Auth::routes([
   ]);
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('logout', 'Auth\LoginController@logout');
 
-Route::resource('companies','CompanyController');
-Route::resource('employees','EmployeeController');
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('companies','CompanyController');
+    Route::resource('employees','EmployeeController');
+});
