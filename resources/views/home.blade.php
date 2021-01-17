@@ -1,23 +1,21 @@
-@extends('layouts.app')
+@extends('layouts.minicrm')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
+    <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Employees</h5>
+          <p class="card-text">Manage available employees.</p>
+          <a href="{{ url('/employees') }}" class="btn btn-dark">Go</a>
         </div>
-    </div>
+      </div>
+
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Companies</h5>
+          <p class="card-text">Manage available companies.</p>
+          <a href="{{ url('/companies') }}" class="btn btn-dark">Go</a>
+        </div>
+      </div>
 </div>
 @endsection
