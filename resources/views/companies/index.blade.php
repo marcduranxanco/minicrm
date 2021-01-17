@@ -20,7 +20,7 @@
 
     <table class="table table-bordered">
         <tr>
-            <th>Id</th>
+            <th>Id company</th>
             <th>Name</th>
             <th>Email</th>
             <th>Logo</th>
@@ -29,7 +29,7 @@
         </tr>
         @foreach ($companies as $company)
         <tr>
-            <td>{{ ++$i }}</td>
+            <td>{{ $company->id }}</td>
             <td>{{ $company->name }}</td>
             <td>{{ $company->email }}</td>
             <td>{{ $company->logo }}</td>
