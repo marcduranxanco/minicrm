@@ -42,7 +42,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Logo:</strong>
-                <input type="text" name="logo" class="form-control" placeholder="Logo">
+                <input type="text" name="logo" class="form-control" placeholder="Image name in public folder">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

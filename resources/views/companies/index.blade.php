@@ -21,18 +21,18 @@
     <table class="table table-bordered">
         <tr>
             <th>Id company</th>
+            <th>Logo</th>
             <th>Name</th>
             <th>Email</th>
-            <th>Logo</th>
             <th>Website</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($companies as $company)
         <tr>
             <td>{{ $company->id }}</td>
+            <td><img src="storage/{{ $company->logo }}" alt="{{ $company->logo }}" width="50"></td>
             <td>{{ $company->name }}</td>
             <td>{{ $company->email }}</td>
-            <td>{{ $company->logo }}</td>
             <td>{{ $company->website }}</td>
             <td>
                 <form action="{{ route('companies.destroy',$company->id) }}" method="POST">
