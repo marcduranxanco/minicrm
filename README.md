@@ -52,11 +52,11 @@ php artisan db:seed --class=UserAdminSeeder
 php artisan make:controller CompanyController --resource --model=Company
 php artisan make:controller EmployeeController --resource --model=Employee
 ```
+:heavy_check_mark:  Use Laravel’s validation function, using Request classes
 
-- Use Laravel’s validation function, using Request classes
-- Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page
+:heavy_check_mark: Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page
 
-- Store companies logos in storage/app/public folder and make them accessible from public
+:heavy_check_mark: Store companies logos in storage/app/public folder and make them accessible from public
 ```
 php artisan storage:link
 ```
