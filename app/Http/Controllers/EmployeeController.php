@@ -41,9 +41,9 @@ class EmployeeController extends Controller
         $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'email',
+            'email' => 'email:rfc,dns',
             'phone',
-            'company_id',
+            'company_id' => 'integer',
         ]);
 
         Employee::create($request->all());
@@ -86,9 +86,9 @@ class EmployeeController extends Controller
         $request->validate([
             'first_name' => 'required',
             'last_name' => 'required',
-            'email',
+            'email' => 'email:rfc,dns',
             'phone',
-            'company_id',
+            'company_id' => 'integer',
         ]);
 
         $employee->update($request->all());

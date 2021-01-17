@@ -40,9 +40,9 @@ class CompanyController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email',
+            'email' => 'email:rfc,dns',
             'logo',
-            'website',
+            'website' => 'regex:/^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/i',
         ]);
 
         Company::create($request->all());
